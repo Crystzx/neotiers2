@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NeoPvP",
-  description: "NeoTiers is a competitive Minecraft network built around our unique Tier List System, Minecraft Server, and Training Hub. Created by competitive Minecraft players for competitive players, NeoTiers serves as the central hub for everything related to high-level Minecraft gameplay. We specialize in promoting and refining 1.9+ combat, offering globally recognized kits designed to help players train, compete, and rise through the ranks.",
+  title: "NeoTiers",
+  description: "NeoTiers is a competitive Minecraft network built around our unique Tier List System, Minecraft Server, and Training Hub. Created by competitive Minecraft players for competitive players, NeoTiers serves as the central hub for everything related to high-level Minecraft gameplay.",
   icons: {
     icon: "https://i.imgur.com/2gkjkIv.png",
   },
