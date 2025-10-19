@@ -14,12 +14,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import type { Metadata } from 'next';
+
 export const metadata: Metadata = {
   title: "NeoPvP",
   description: "NeoTiers & NeoDuels Next-Generation Minecraft PvP",
   icons: {
     icon: "https://i.imgur.com/2gkjkIv.png",
+  },
 };
+
 
 export default function RootLayout({
   children,
