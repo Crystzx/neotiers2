@@ -306,15 +306,14 @@ export default function Home() {
 
           <div className="mt-8 pt-8 border-t border-border/30 text-center md:text-left">
             <p className="text-xs text-muted-foreground leading-relaxed mb-4">
-              © 2025 PvPTiers FZCO. Registered in the United Arab Emirates. All rights reserved. The PvPTiers server is in
-              no way affiliated with Mojang Studios, nor should it be considered a company endorsed by Mojang Studios.
-              Any contributions or purchases made on this store goes to the PvPTiers team.
+              © 2025 NeoTiers. All rights reserved. NeoTiers is in no way affiliated with Mojang Studios.
+              Any contributions or purchases made on this store goes to the construction of a new and improved NeoTiers.
             </p>
             <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 text-xs">
               <div className="flex gap-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">[terms of service]</a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">[privacy policy]</a>
-                <a href="mailto:contact@pvptiers.com" className="text-muted-foreground hover:text-primary transition-colors">[contact@pvptiers.com]</a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"></a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"></a>
+                <a href="mailto:contact@pvptiers.com" className="text-muted-foreground hover:text-primary transition-colors"></a>
               </div>
             </div>
           </div>
