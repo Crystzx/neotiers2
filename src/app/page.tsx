@@ -326,11 +326,16 @@ export default function Home() {
 
 // Helper functions
 function getTierBadgeColor(tier: string) {
-  if (tier.startsWith('HT1')) return 'bg-gold-900/50 text-gold-300 border border-gold-800';
-  if (tier.startsWith('HT3')) return 'bg-purple-900/50 text-purple-300 border border-purple-800';
-  if (tier.startsWith('HT2')) return 'bg-purple-900/50 text-purple-300 border border-purple-800';
-  if (tier.startsWith('LT')) return 'bg-cyan-900/50 text-cyan-300 border border-cyan-800';
-  return 'bg-gray-900/50 text-gray-300 border border-gray-800';
+  if (tier.startsWith('HT1'))
+    return 'bg-[#4B3B00]/50 text-[#FFD700] border border-[#B8860B]';  // gold
+
+  if (tier.startsWith('HT3') || tier.startsWith('HT2'))
+    return 'bg-[#3B0E59]/50 text-[#9F7AEA] border border-[#5B21B6]';  // purple
+
+  if (tier.startsWith('LT'))
+    return 'bg-[#095E64]/50 text-[#5EEAD4] border border-[#0F766E]';  // cyan
+
+  return 'bg-[#1F2937]/50 text-[#D1D5DB] border border-[#374151]';  // gray
 }
 
 function getRegionColor(region: string) {
