@@ -344,55 +344,31 @@ function getRegionColor(region: string) {
 
 // Data
 const highTierResults = [
-  { name: "Leony_2010", avatar: "https://ext.same-assets.com/3266302440/3866723030.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "EU" },
-  { name: "Moonrisej", avatar: "https://ext.same-assets.com/3266302440/3314350320.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "NA" },
-  { name: "175kg", avatar: "https://ext.same-assets.com/3266302440/2723875821.webp", mode: "Pot", modeIcon: "https://ext.same-assets.com/3266302440/2871566626.webp", tier: "HT3", region: "AS" },
-  { name: "arimaQwErTy", avatar: "https://ext.same-assets.com/3266302440/2505604513.webp", mode: "Neth Pot", modeIcon: "https://ext.same-assets.com/3266302440/2438573484.webp", tier: "HT3", region: "NA" },
-  { name: "vyzoc", avatar: "https://ext.same-assets.com/3266302440/4228850348.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "EU" },
-  { name: "Olivershh", avatar: "https://ext.same-assets.com/3266302440/1883769982.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "OC" },
+  { name: "N/A", avatar: "render.crafty.gg/3d/bust/MHF_Steve", mode: "UHC", modeIcon: "https://pvptiers.com/icons/badges/uhc.webp", tier: "HT1", region: "N/A" },
 ];
 
 const liveTestResults = [
-  { name: "GlizzyDraka", avatar: "https://ext.same-assets.com/3266302440/835451864.webp", mode: "SMP", modeIcon: "https://ext.same-assets.com/3266302440/3790458977.webp", tier: "LT3", region: "EU" },
-  { name: "bestcluchplayer", avatar: "https://ext.same-assets.com/3266302440/1125912565.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "LT3", region: "EU" },
-  { name: "_Fragzs", avatar: "https://ext.same-assets.com/3266302440/4066137740.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "LT4", region: "AS" },
-  { name: "bestcluchplayer", avatar: "https://ext.same-assets.com/3266302440/1125912565.webp", mode: "Pot", modeIcon: "https://ext.same-assets.com/3266302440/2871566626.webp", tier: "LT3", region: "EU" },
-  { name: "SuperSamuel31er", avatar: "https://ext.same-assets.com/3266302440/950297920.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT4", region: "EU" },
-  { name: "catcuddler911", avatar: "https://ext.same-assets.com/3266302440/1546367269.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "LT3", region: "EU" },
+  { name: "N/A", avatar: "render.crafty.gg/3d/bust/MHF_Steve", mode: "UHC", modeIcon: "https://pvptiers.com/icons/badges/uhc.webp", tier: "HT4", region: "N/A" },
 ];
+
+// Icons
+// Crystal - https://pvptiers.com/icons/modes/crystal.webp
+// Pot - https://pvptiers.com/icons/modes/pot.webp
+// Neth Pot - https://pvptiers.com/icons/badges/neth_pot.webp
+// SMP - https://pvptiers.com/icons/badges/smp.webp
+// Sword - https://pvptiers.com/icons/badges/sword.webp
+// Axe - https://pvptiers.com/icons/badges/axe.webp
+// UHC - https://pvptiers.com/icons/badges/uhc.webp
+
 
 const newsItems = [
   {
-    title: "PvPTiers Changelog September 2025",
-    description: "PvPTiers Changelog: September 2025 - 3.2 Finished Discord Banners - We have a new Discord banner design. We have implemented this in all game modes now New Axe & Shield PvP Guide - A much needed update to the Axe segment...",
-    image: "https://ext.same-assets.com/3266302440/298414767.png",
-    author: "Enrico",
-    authorAvatar: "https://ext.same-assets.com/3266302440/1650174374.webp",
-    date: "Oct 9, 2025, 2:23:13 PM"
-  },
-  {
-    title: "V3 Website Update",
-    description: "V3 Website Update The long awaited website upgrade the Network deserves has finally arrived. For so long now the system that has maintained and managed 10,000s of tests per month has had a mediocre website...",
+    title: "NeoTiers Website V2",
+    description: "The new Website Update The long awaited website upgrade the Network deserves has finally arrived. For so long now the system that has maintained and managed 10,000s of tests per month has had a mediocre website...",
     image: "https://ext.same-assets.com/3266302440/2789768779.png",
-    author: "Quad",
-    authorAvatar: "https://ext.same-assets.com/3266302440/2866721266.webp",
+    author: "Crystzx",
+    authorAvatar: "https://media.discordapp.net/attachments/1398263627219337308/1429528718337900635/image-modified.png?ex=68f677dd&is=68f5265d&hm=1cf37c937b20ad27f13e1f427998e6dda3a952c2f0ca255e9395f37c6dcb17a7&=&format=webp&quality=lossless&width=246&height=246",
     date: "Aug 9, 2025, 5:50:29 PM"
-  },
-  {
-    title: "Mace Launch",
-    description: "We are proud to announce the launch of the Mace PvP kit in the PvPTiers network. We will be incubating various kit choices for the community to try and vote on before initiating testing...",
-    image: "https://ext.same-assets.com/3266302440/3967685267.webp",
-    author: "WingXZ",
-    authorAvatar: "https://ext.same-assets.com/3266302440/1650174374.webp",
-    date: "Jul 17, 2025, 4:31:00 PM"
-  },
-  {
-    title: "PvPTiers Server Trailer",
-    description: "Our trailer for our long awaited official network server is now live.",
-    image: "https://ext.same-assets.com/3266302440/1963928736.webp",
-    author: "Enrico",
-    authorAvatar: "https://ext.same-assets.com/3266302440/1650174374.webp",
-    date: "Jul 17, 2025, 4:30:32 PM"
   },
 ];
 
