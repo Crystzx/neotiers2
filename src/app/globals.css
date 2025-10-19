@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 20 15% 4%;
-    --foreground: 30 10% 80%;
-    --card: 20 15% 6%;
-    --card-foreground: 30 10% 80%;
-    --popover: 20 15% 6%;
-    --popover-foreground: 30 10% 80%;
-    --primary: 25 60% 65%;
-    --primary-foreground: 20 15% 4%;
-    --secondary: 170 30% 55%;
-    --secondary-foreground: 20 15% 4%;
-    --muted: 20 15% 15%;
-    --muted-foreground: 30 10% 60%;
-    --accent: 25 60% 65%;
-    --accent-foreground: 20 15% 4%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 30 10% 20%;
-    --input: 30 10% 20%;
-    --ring: 25 60% 65%;
+    --background: 260 20% 8%;            /* dark purple background */
+    --foreground: 270 15% 85%;           /* light purple foreground */
+    --card: 260 25% 12%;                 /* card background purple */
+    --card-foreground: 270 15% 85%;      /* card foreground text */
+    --popover: 260 25% 12%;              /* popover background */
+    --popover-foreground: 270 15% 85%;   /* popover text */
+    --primary: 265 80% 70%;              /* primary accent purple */
+    --primary-foreground: 275 10% 15%;   /* primary text */
+    --secondary: 270 60% 60%;            /* secondary purple */
+    --secondary-foreground: 270 10% 15%; /* secondary text */
+    --muted: 265 30% 30%;                /* muted purple background */
+    --muted-foreground: 270 10% 60%;    /* muted purple text */
+    --accent: 265 80% 70%;               /* accent purple */
+    --accent-foreground: 275 10% 15%;    /* accent foreground */
+    --destructive: 0 62.8% 30.6%;        /* keep for destructive */
+    --destructive-foreground: 0 0% 98%;  /* keep for destructive */
+    --border: 270 15% 45%;                /* border purple */
+    --input: 270 15% 45%;                 /* input border purple */
+    --ring: 270 80% 70%;                  /* ring purple */
     --radius: 0.5rem;
   }
 }
