@@ -34,7 +34,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-            The Ultimate PvP Experience:
+            The Future PvP Experience:
           </h1>
           <h2 className="text-lg md:text-xl uppercase tracking-widest text-primary mb-8 font-bold">
             Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.
