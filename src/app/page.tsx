@@ -377,7 +377,7 @@ const liveTestResults = [
 
 const newsItems = [
   {
-    title: "NeoTiers Website V2",
+    title: "NeoTiers Website V1.5",
     description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
     image: "https://i.imgur.com/JhWLQPS.png",
     author: "Crystzx",
