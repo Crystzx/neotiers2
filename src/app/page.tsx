@@ -326,7 +326,9 @@ export default function Home() {
 
 // Helper functions
 function getTierBadgeColor(tier: string) {
-  if (tier.startsWith('HT')) return 'bg-purple-900/50 text-purple-300 border border-purple-800';
+  if (tier.startsWith('HT1')) return 'bg-gold-900/50 text-gold-300 border border-gold-800';
+  if (tier.startsWith('HT3')) return 'bg-purple-900/50 text-purple-300 border border-purple-800';
+  if (tier.startsWith('HT2')) return 'bg-purple-900/50 text-purple-300 border border-purple-800';
   if (tier.startsWith('LT')) return 'bg-cyan-900/50 text-cyan-300 border border-cyan-800';
   return 'bg-gray-900/50 text-gray-300 border border-gray-800';
 }
