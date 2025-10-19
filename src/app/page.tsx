@@ -200,15 +200,15 @@ export default function Home() {
 
             {/* Whitepaper CTA */}
             <div className="bg-card border border-border rounded-lg p-6 text-center">
-              <h4 className="text-lg font-bold mb-4 text-white">Read our whitepaper</h4>
+              <h4 className="text-lg font-bold mb-4 text-white">Read our rulebook</h4>
               <a
-                href=""
+                href="https://discord.com/channels/1401481396907675669/1401484383642189835"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-700 text-white font-bold rounded-lg transition-all"
               >
                 <BookOpen className="w-5 h-5" />
-                Read our <span className="text-orange-200">Gitbook</span>
+                Read our <span className="text-orange-200">Rules</span>
               </a>
             </div>
           </div>
