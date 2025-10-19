@@ -17,6 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NeoPvP",
   description: "NeoTiers & NeoDuels Next-Generation Minecraft PvP",
+  icons: {
+    icon: "https://i.imgur.com/2gkjkIv.png",
 };
 
 export default function RootLayout({
