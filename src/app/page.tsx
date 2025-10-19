@@ -1,0 +1,420 @@
+import Image from "next/image";
+import { Menu, BookOpen, Users } from "lucide-react";
+
+export default function Home() {
+  return (
+    <div className="min-h-screen">
+      {/* Header */}
+      <header className="border-b border-border/30 sticky top-0 bg-background/80 backdrop-blur-sm z-50">
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <Image
+              src="https://ext.same-assets.com/3266302440/2476292051.png"
+              alt="PvPTiers Logo"
+              width={50}
+              height={50}
+              className="w-12 h-12"
+            />
+            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-card border border-border rounded-full">
+              <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
+              <div className="flex items-center gap-1.5">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="text-sm font-medium">pvptiers.com</span>
+              </div>
+            </div>
+          </div>
+          <button className="flex items-center gap-2 px-4 py-2 hover:bg-card rounded-lg transition-colors">
+            <span className="text-sm font-medium tracking-wider uppercase text-muted-foreground">Menu</span>
+            <Menu className="w-5 h-5" />
+          </button>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+            The Ultimate PvP Experience:
+          </h1>
+          <h2 className="text-lg md:text-xl uppercase tracking-widest text-primary mb-8 font-bold">
+            The ultimate competitive PvP experience in Minecraft featuring a state of the art server and global ranking network.
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            PvPTiers is a Minecraft network consisting of a Tier List system, Minecraft Server, and various communities.
+            Designed by competitive players, for competitive players. We are the hub for all things related to competitive
+            gameplay in Minecraft. We specialize in championing 1.9+ combat via various kits which are globally recognized
+            as game modes within the community.
+          </p>
+        </div>
+      </section>
+
+      {/* Main Content Grid */}
+      <section className="container mx-auto px-4 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Left Column - Tier Results */}
+          <div className="lg:col-span-2 space-y-6">
+            {/* High Tier Results */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-2xl font-bold text-white">High Tier Results</h2>
+              </div>
+              <div className="mb-4">
+                <span className="text-xs uppercase tracking-wider px-2 py-1 bg-red-950/50 text-red-400 border border-red-900/50 rounded">
+                  Latest High Tier 3 and above results
+                </span>
+              </div>
+              <div className="space-y-2">
+                {highTierResults.map((result, i) => (
+                  <div key={i} className="flex items-center justify-between p-3 hover:bg-muted/30 rounded transition-colors">
+                    <div className="flex items-center gap-3">
+                      <Image
+                        src={result.avatar}
+                        alt={result.name}
+                        width={40}
+                        height={40}
+                        className="rounded"
+                      />
+                      <span className="font-medium text-white">{result.name}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src={result.modeIcon}
+                        alt={result.mode}
+                        width={24}
+                        height={24}
+                        className="w-6 h-6"
+                      />
+                      <span className="text-sm text-muted-foreground uppercase">{result.mode}</span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>
+                        {result.tier}
+                      </span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>
+                        {result.region}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Live Test Results */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-2xl font-bold text-white">Live Test Results</h2>
+              </div>
+              <div className="mb-4">
+                <span className="text-xs uppercase tracking-wider px-2 py-1 bg-red-950/50 text-red-400 border border-red-900/50 rounded">
+                  Feed of all Tier Results
+                </span>
+              </div>
+              <div className="space-y-2">
+                {liveTestResults.map((result, i) => (
+                  <div key={i} className="flex items-center justify-between p-3 hover:bg-muted/30 rounded transition-colors">
+                    <div className="flex items-center gap-3">
+                      <Image
+                        src={result.avatar}
+                        alt={result.name}
+                        width={40}
+                        height={40}
+                        className="rounded"
+                      />
+                      <span className="font-medium text-white">{result.name}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Image
+                        src={result.modeIcon}
+                        alt={result.mode}
+                        width={24}
+                        height={24}
+                        className="w-6 h-6"
+                      />
+                      <span className="text-sm text-muted-foreground uppercase">{result.mode}</span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>
+                        {result.tier}
+                      </span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>
+                        {result.region}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Community Stats */}
+          <div className="space-y-6">
+            {/* Discord CTA */}
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h3 className="text-xl font-bold mb-4 text-white">Join our official<br />Discord Server!</h3>
+              <a
+                href="https://discord.gg/pvptiers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-700 text-white font-bold rounded-lg transition-all"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                </svg>
+                Join our <span className="text-orange-200">Discord</span>
+              </a>
+            </div>
+
+            {/* Community Members */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <h4 className="text-lg font-bold mb-4 text-white">Community Members</h4>
+              <div className="flex items-center gap-2 mb-3">
+                <div className="flex -space-x-2">
+                  <Image src="https://ext.same-assets.com/3266302440/4123661564.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://ext.same-assets.com/3266302440/1344806024.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                </div>
+                <span className="text-sm text-muted-foreground">and <span className="text-white font-bold">+4</span></span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Users className="w-4 h-4" />
+                <span>Total Discord Members</span>
+                <span className="ml-auto text-white font-bold">207,808</span>
+              </div>
+            </div>
+
+            {/* Players Online */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <h4 className="text-lg font-bold mb-4 text-white">Players Online</h4>
+              <div className="text-center py-4">
+                <span className="text-sm uppercase tracking-wider px-3 py-1.5 bg-red-950/50 text-red-400 border border-red-900/50 rounded">
+                  Server Whitelisted
+                </span>
+              </div>
+            </div>
+
+            {/* Active Testers */}
+            <div className="bg-card border border-border rounded-lg p-6">
+              <h4 className="text-lg font-bold mb-4 text-white">Active Testers</h4>
+              <div className="flex -space-x-2 mb-3">
+                <Image src="https://ext.same-assets.com/3266302440/4234582218.webp" alt="Tester" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                <Image src="https://ext.same-assets.com/3266302440/3951862465.webp" alt="Tester" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Users className="w-4 h-4" />
+                <span>Total all-time tests</span>
+                <span className="ml-auto text-white font-bold">280,630</span>
+              </div>
+            </div>
+
+            {/* Whitepaper CTA */}
+            <div className="bg-card border border-border rounded-lg p-6 text-center">
+              <h4 className="text-lg font-bold mb-4 text-white">Read our whitepaper</h4>
+              <a
+                href="https://mctiers.gitbook.io/pvptiers-whitepaper/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-700 text-white font-bold rounded-lg transition-all"
+              >
+                <BookOpen className="w-5 h-5" />
+                Read our <span className="text-orange-200">Gitbook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* News/Changelog Section */}
+      <section className="container mx-auto px-4 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {newsItems.map((item, i) => (
+            <div key={i} className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary/50 transition-colors group cursor-pointer">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={600}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white">{item.title}</h3>
+              </div>
+              <div className="p-6">
+                <p className="text-sm text-muted-foreground line-clamp-3 mb-4">{item.description}</p>
+                <div className="flex items-center gap-3">
+                  <Image
+                    src={item.authorAvatar}
+                    alt={item.author}
+                    width={32}
+                    height={32}
+                    className="rounded-full w-8 h-8"
+                  />
+                  <div className="flex-1">
+                    <div className="text-sm font-medium text-white">{item.author}</div>
+                  </div>
+                  <div className="text-xs text-muted-foreground">{item.date}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex items-center justify-center gap-4 mt-8">
+          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+            PREV
+          </button>
+          <div className="w-10 h-10 flex items-center justify-center bg-primary text-primary-foreground font-bold rounded">
+            1
+          </div>
+          <button className="px-4 py-2 text-sm text-muted-foreground hover:text-white transition-colors">
+            NEXT
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-border/30 bg-background/50 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex items-center gap-4">
+              <Image
+                src="https://ext.same-assets.com/3266302440/2476292051.png"
+                alt="PvPTiers Logo"
+                width={60}
+                height={60}
+                className="w-16 h-16"
+              />
+            </div>
+
+            <div className="flex items-center gap-4">
+              {socialLinks.map((social, i) => (
+                <a
+                  key={i}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 flex items-center justify-center bg-card border border-border hover:border-primary hover:bg-primary/10 rounded transition-all"
+                >
+                  {social.icon}
+                </a>
+              ))}
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-card border border-border rounded-full ml-4">
+                <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
+                <div className="flex items-center gap-1.5">
+                  <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                  <span className="text-sm font-medium">pvptiers.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-border/30 text-center md:text-left">
+            <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+              © 2025 PvPTiers FZCO. Registered in the United Arab Emirates. All rights reserved. The PvPTiers server is in
+              no way affiliated with Mojang Studios, nor should it be considered a company endorsed by Mojang Studios.
+              Any contributions or purchases made on this store goes to the PvPTiers team.
+            </p>
+            <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 text-xs">
+              <div className="flex gap-4">
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">[terms of service]</a>
+                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">[privacy policy]</a>
+                <a href="mailto:contact@pvptiers.com" className="text-muted-foreground hover:text-primary transition-colors">[contact@pvptiers.com]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+// Helper functions
+function getTierBadgeColor(tier: string) {
+  if (tier.startsWith('HT')) return 'bg-purple-900/50 text-purple-300 border border-purple-800';
+  if (tier.startsWith('LT')) return 'bg-cyan-900/50 text-cyan-300 border border-cyan-800';
+  return 'bg-gray-900/50 text-gray-300 border border-gray-800';
+}
+
+function getRegionColor(region: string) {
+  const colors: Record<string, string> = {
+    EU: 'bg-blue-900/50 text-blue-300 border border-blue-800',
+    NA: 'bg-red-900/50 text-red-300 border border-red-800',
+    AS: 'bg-orange-900/50 text-orange-300 border border-orange-800',
+    OC: 'bg-teal-900/50 text-teal-300 border border-teal-800',
+    SA: 'bg-green-900/50 text-green-300 border border-green-800',
+  };
+  return colors[region] || 'bg-gray-900/50 text-gray-300 border border-gray-800';
+}
+
+// Data
+const highTierResults = [
+  { name: "Leony_2010", avatar: "https://ext.same-assets.com/3266302440/3866723030.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "EU" },
+  { name: "Moonrisej", avatar: "https://ext.same-assets.com/3266302440/3314350320.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "NA" },
+  { name: "175kg", avatar: "https://ext.same-assets.com/3266302440/2723875821.webp", mode: "Pot", modeIcon: "https://ext.same-assets.com/3266302440/2871566626.webp", tier: "HT3", region: "AS" },
+  { name: "arimaQwErTy", avatar: "https://ext.same-assets.com/3266302440/2505604513.webp", mode: "Neth Pot", modeIcon: "https://ext.same-assets.com/3266302440/2438573484.webp", tier: "HT3", region: "NA" },
+  { name: "vyzoc", avatar: "https://ext.same-assets.com/3266302440/4228850348.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "EU" },
+  { name: "Olivershh", avatar: "https://ext.same-assets.com/3266302440/1883769982.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT3", region: "OC" },
+];
+
+const liveTestResults = [
+  { name: "GlizzyDraka", avatar: "https://ext.same-assets.com/3266302440/835451864.webp", mode: "SMP", modeIcon: "https://ext.same-assets.com/3266302440/3790458977.webp", tier: "LT3", region: "EU" },
+  { name: "bestcluchplayer", avatar: "https://ext.same-assets.com/3266302440/1125912565.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "LT3", region: "EU" },
+  { name: "_Fragzs", avatar: "https://ext.same-assets.com/3266302440/4066137740.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "LT4", region: "AS" },
+  { name: "bestcluchplayer", avatar: "https://ext.same-assets.com/3266302440/1125912565.webp", mode: "Pot", modeIcon: "https://ext.same-assets.com/3266302440/2871566626.webp", tier: "LT3", region: "EU" },
+  { name: "SuperSamuel31er", avatar: "https://ext.same-assets.com/3266302440/950297920.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "HT4", region: "EU" },
+  { name: "catcuddler911", avatar: "https://ext.same-assets.com/3266302440/1546367269.webp", mode: "Crystal", modeIcon: "https://ext.same-assets.com/3266302440/3854147614.webp", tier: "LT3", region: "EU" },
+];
+
+const newsItems = [
+  {
+    title: "PvPTiers Changelog September 2025",
+    description: "PvPTiers Changelog: September 2025 - 3.2 Finished Discord Banners - We have a new Discord banner design. We have implemented this in all game modes now New Axe & Shield PvP Guide - A much needed update to the Axe segment...",
+    image: "https://ext.same-assets.com/3266302440/298414767.png",
+    author: "Enrico",
+    authorAvatar: "https://ext.same-assets.com/3266302440/1650174374.webp",
+    date: "Oct 9, 2025, 2:23:13 PM"
+  },
+  {
+    title: "V3 Website Update",
+    description: "V3 Website Update The long awaited website upgrade the Network deserves has finally arrived. For so long now the system that has maintained and managed 10,000s of tests per month has had a mediocre website...",
+    image: "https://ext.same-assets.com/3266302440/2789768779.png",
+    author: "Quad",
+    authorAvatar: "https://ext.same-assets.com/3266302440/2866721266.webp",
+    date: "Aug 9, 2025, 5:50:29 PM"
+  },
+  {
+    title: "Mace Launch",
+    description: "We are proud to announce the launch of the Mace PvP kit in the PvPTiers network. We will be incubating various kit choices for the community to try and vote on before initiating testing...",
+    image: "https://ext.same-assets.com/3266302440/3967685267.webp",
+    author: "WingXZ",
+    authorAvatar: "https://ext.same-assets.com/3266302440/1650174374.webp",
+    date: "Jul 17, 2025, 4:31:00 PM"
+  },
+  {
+    title: "PvPTiers Server Trailer",
+    description: "Our trailer for our long awaited official network server is now live.",
+    image: "https://ext.same-assets.com/3266302440/1963928736.webp",
+    author: "Enrico",
+    authorAvatar: "https://ext.same-assets.com/3266302440/1650174374.webp",
+    date: "Jul 17, 2025, 4:30:32 PM"
+  },
+];
+
+const socialLinks = [
+  {
+    url: "https://discord.gg/pvptiers",
+    icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/></svg>
+  },
+  {
+    url: "https://www.tiktok.com/pvptiers",
+    icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+  },
+  {
+    url: "https://www.youtube.com/@pvptiers",
+    icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+  },
+  {
+    url: "https://www.instagram.com/pvptiers",
+    icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+  },
+  {
+    url: "https://x.com/pvptiers",
+    icon: <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  },
+];
