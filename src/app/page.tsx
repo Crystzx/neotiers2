@@ -37,13 +37,12 @@ export default function Home() {
             The Ultimate PvP Experience:
           </h1>
           <h2 className="text-lg md:text-xl uppercase tracking-widest text-primary mb-8 font-bold">
-            The ultimate competitive PvP experience in Minecraft featuring a state of the art server and global ranking network.
+            Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            PvPTiers is a Minecraft network consisting of a Tier List system, Minecraft Server, and various communities.
-            Designed by competitive players, for competitive players. We are the hub for all things related to competitive
-            gameplay in Minecraft. We specialize in championing 1.9+ combat via various kits which are globally recognized
-            as game modes within the community.
+            NeoTiers is a competitive Minecraft network built around our unique Tier List System, Minecraft Server, and Training Hub.
+            Created by competitive Minecraft players for competitive players, NeoTiers serves as the central hub for everything related to high-level Minecraft gameplay.
+            We specialize in promoting and refining 1.9+ combat, offering globally recognized kits designed to help players train, compete, and rise through the ranks.
           </p>
         </div>
       </section>
