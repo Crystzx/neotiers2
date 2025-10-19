@@ -187,10 +187,10 @@ export default function Home() {
 
             {/* Active Testers */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <h4 className="text-lg font-bold mb-4 text-white">Active Testers</h4>
+              <h4 className="text-lg font-bold mb-4 text-white">Super Testers</h4>
               <div className="flex -space-x-2 mb-3">
-                <Image src="https://ext.same-assets.com/3266302440/4234582218.webp" alt="Tester" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
-                <Image src="https://ext.same-assets.com/3266302440/3951862465.webp" alt="Tester" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                <Image src="https://render.crafty.gg/3d/bust/crystzx" alt="Crystzx's avatar" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
+                <Image src="https://render.crafty.gg/3d/bust/Certier" alt="Certier's avatar" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
