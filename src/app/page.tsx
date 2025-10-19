@@ -378,8 +378,8 @@ const liveTestResults = [
 const newsItems = [
   {
     title: "NeoTiers Website V2",
-    description: "The new Website Update The long awaited website upgrade the Network deserves has finally arrived. For so long now the system that has maintained and managed 10,000s of tests per month has had a mediocre website...",
-    image: "https://ext.same-assets.com/3266302440/2789768779.png",
+    description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
+    image: "https://i.imgur.com/O04QtXT.png",
     author: "Crystzx",
     authorAvatar: "https://media.discordapp.net/attachments/1398263627219337308/1429528718337900635/image-modified.png?ex=68f677dd&is=68f5265d&hm=1cf37c937b20ad27f13e1f427998e6dda3a952c2f0ca255e9395f37c6dcb17a7&=&format=webp&quality=lossless&width=246&height=246",
     date: "Aug 9, 2025, 5:50:29 PM"
