@@ -326,16 +326,16 @@ export default function Home() {
 
 // Helper functions
 function getTierBadgeColor(tier: string) {
-  if (tier.startsWith('HT1'))
-    return 'bg-[#4B3B00]/50 text-[#FFD700] border border-[#B8860B]';  // gold
+  if (tier.startsWith('HT1') || tier.startsWith('LT1'))
+    return 'bg-[#4B3B00]/50 text-[#FFD700] border border-[#B8860B]';  // goldennn
 
-  if (tier.startsWith('HT3') || tier.startsWith('HT2'))
-    return 'bg-[#3B0E59]/50 text-[#9F7AEA] border border-[#5B21B6]';  // purple
-
-  if (tier.startsWith('LT'))
-    return 'bg-[#095E64]/50 text-[#5EEAD4] border border-[#0F766E]';  // cyan
-
-  return 'bg-[#1F2937]/50 text-[#D1D5DB] border border-[#374151]';  // gray
+  if (tier.startsWith('HT2') || tier.startsWith('LT2'))
+    return 'bg-[#adadad]/50 text-[#e6e6e6] border border-[#8a8a8a]';  // silver/iron type shi
+  
+  if (tier.startsWith('HT3') || tier.startsWith('LT3'))
+    return 'bg-[#593e31]/50 text-[#8f6c57] border border-[#423126]';  // brown shiii
+  
+  return 'bg-[#1F2937]/50 text-[#D1D5DB] border border-[#374151]';  // gray ahh
 }
 
 function getRegionColor(region: string) {
@@ -351,11 +351,19 @@ function getRegionColor(region: string) {
 
 // Data
 const highTierResults = [
-  { name: "N/A", avatar: "render.crafty.gg/3d/bust/MHF_Steve", mode: "UHC", modeIcon: "https://pvptiers.com/icons/badges/uhc.webp", tier: "HT1", region: "N/A" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "UHC", modeIcon: "https://pvptiers.com/icons/badges/uhc.webp", tier: "HT1", region: "EU" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Pot", modeIcon: "https://pvptiers.com/icons/badges/pot.webp", tier: "LT1", region: "NA" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Neth Pot", modeIcon: "https://pvptiers.com/icons/badges/neth_pot.webp", tier: "HT2", region: "AS" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "SMP", modeIcon: "https://pvptiers.com/icons/badges/smp.webp", tier: "HT3", region: "SA" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Axe", modeIcon: "https://pvptiers.com/icons/badges/axe.webp", tier: "HT3", region: "OC" },
 ];
 
 const liveTestResults = [
-  { name: "N/A", avatar: "render.crafty.gg/3d/bust/MHF_Steve", mode: "UHC", modeIcon: "https://pvptiers.com/icons/badges/uhc.webp", tier: "HT4", region: "N/A" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Crystal", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "HT4", region: "EU" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Sword", modeIcon: "https://pvptiers.com/icons/badges/sword.webp", tier: "LT4", region: "AS" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Axe", modeIcon: "https://pvptiers.com/icons/badges/axe.webp", tier: "HT5", region: "SA" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "SMP", modeIcon: "https://pvptiers.com/icons/badges/smp.webp", tier: "LT5", region: "OC" },
+
 ];
 
 // Icons
