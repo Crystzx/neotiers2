@@ -147,7 +147,7 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-4 text-white">Join our official<br />Discord Server!</h3>
               <a
-                href="https://discord.gg/pvptiers"
+                href="https://dsc.gg/neotiers"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-700 text-white font-bold rounded-lg transition-all"
