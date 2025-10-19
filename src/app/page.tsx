@@ -177,11 +177,14 @@ export default function Home() {
 
             {/* Players Online */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <h4 className="text-lg font-bold mb-4 text-white">Players Online</h4>
-              <div className="text-center py-4">
-                <span className="text-sm uppercase tracking-wider px-3 py-1.5 bg-red-950/50 text-red-400 border border-red-900/50 rounded">
-                  Server Whitelisted
-                </span>
+              <h4 className="text-lg font-bold mb-4 text-white">Gamemode of the Month</h4>
+              <div className="flex -space-x-2 mb-3">
+                <Image src="https://pvptiers.com/icons/modes/pot.webp" alt="Pot" width={28} height={28} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Users className="w-4 h-4" />
+                <span>Tests Last Month</span>
+                <span className="ml-auto text-white font-bold">0</span>
               </div>
             </div>
 
