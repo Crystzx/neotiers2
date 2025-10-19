@@ -165,15 +165,14 @@ export default function Home() {
               <h4 className="text-lg font-bold mb-4 text-white">Community Members</h4>
               <div className="flex items-center gap-2 mb-3">
                 <div className="flex -space-x-2">
-                  <Image src="https://ext.same-assets.com/3266302440/4123661564.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
-                  <Image src="https://ext.same-assets.com/3266302440/1344806024.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.imgur.com/o2Zxnw2.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
                 </div>
-                <span className="text-sm text-muted-foreground">and <span className="text-white font-bold">+4</span></span>
+                <span className="text-sm text-muted-foreground">and <span className="text-white font-bold">+0</span></span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Total Discord Members</span>
-                <span className="ml-auto text-white font-bold">207,808</span>
+                <span className="ml-auto text-white font-bold">≈100</span>
               </div>
             </div>
 
@@ -205,7 +204,7 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-6 text-center">
               <h4 className="text-lg font-bold mb-4 text-white">Read our whitepaper</h4>
               <a
-                href="https://mctiers.gitbook.io/pvptiers-whitepaper/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-700 text-white font-bold rounded-lg transition-all"
@@ -274,8 +273,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-4">
               <Image
-                src="https://ext.same-assets.com/3266302440/2476292051.png"
-                alt="PvPTiers Logo"
+                src="https://i.imgur.com/2gkjkIv.png"
+                alt="NeoTiers Logo"
                 width={60}
                 height={60}
                 className="w-16 h-16"
@@ -298,7 +297,7 @@ export default function Home() {
                 <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
                 <div className="flex items-center gap-1.5">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                  <span className="text-sm font-medium">pvptiers.com</span>
+                  <span className="text-sm font-medium">neotiers.mc-mods.xyz</span>
                 </div>
               </div>
             </div>
