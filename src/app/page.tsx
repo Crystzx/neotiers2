@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Image
-              src="https://ext.same-assets.com/3266302440/2476292051.png"
+              src="https://i.imgur.com/2gkjkIv.png"
               alt="NeoTiers Logo"
               width={50}
               height={50}
