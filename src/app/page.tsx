@@ -9,7 +9,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Image
-              src="https://i.imgur.com/2gkjkIv.png"
+              src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
               alt="NeoTiers Logo"
               width={50}
               height={50}
@@ -164,7 +164,7 @@ export default function Home() {
               <h4 className="text-lg font-bold mb-4 text-white">Community Members</h4>
               <div className="flex items-center gap-2 mb-3">
                 <div className="flex -space-x-2">
-                  <Image src="https://i.imgur.com/o2Zxnw2.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.ibb.co/1tgr8gh0/cropped-circle-image.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
                 </div>
                 <span className="text-sm text-muted-foreground">and <span className="text-white font-bold">+0</span></span>
               </div>
@@ -274,7 +274,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-4">
               <Image
-                src="https://i.imgur.com/2gkjkIv.png"
+                src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
                 alt="NeoTiers Logo"
                 width={60}
                 height={60}
@@ -379,7 +379,7 @@ const newsItems = [
   {
     title: "NeoTiers Website V1.5",
     description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
-    image: "https://i.imgur.com/lBxbOFt.png",
+    image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
     author: "Crystzx",
     authorAvatar: "https://media.discordapp.net/attachments/1398263627219337308/1429528718337900635/image-modified.png?ex=68f677dd&is=68f5265d&hm=1cf37c937b20ad27f13e1f427998e6dda3a952c2f0ca255e9395f37c6dcb17a7&=&format=webp&quality=lossless&width=246&height=246",
     date: "Aug 9, 2025, 5:50:29 PM"
