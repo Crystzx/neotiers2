@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <Image
               src="https://ext.same-assets.com/3266302440/2476292051.png"
-              alt="PvPTiers Logo"
+              alt="NeoTiers Logo"
               width={50}
               height={50}
               className="w-12 h-12"
