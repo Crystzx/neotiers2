@@ -192,12 +192,12 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-6">
               <h4 className="text-lg font-bold mb-4 text-white">Super Testers</h4>
               <div className="flex -space-x-2 mb-3">
-                <Image src="https://render.crafty.gg/3d/bust/Steve" alt="Steve's avatar" width={28} height={28} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
+                <Image src="https://render.crafty.gg/3d/bust/Crystzx" alt="Crystzx's avatar" width={28} height={28} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Last Month's Tests (September)</span>
-                <span className="ml-auto text-white font-bold">0</span>
+                <span className="ml-auto text-white font-bold">1275</span>
               </div>
             </div>
 
@@ -376,22 +376,6 @@ const liveTestResults = [
 
 
 const newsItems = [
-  {
-    title: "NeoTiers Website V1.5",
-    description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
-    image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
-    author: "Crystzx",
-    authorAvatar: "https://media.discordapp.net/attachments/1398263627219337308/1429528718337900635/image-modified.png?ex=68f677dd&is=68f5265d&hm=1cf37c937b20ad27f13e1f427998e6dda3a952c2f0ca255e9395f37c6dcb17a7&=&format=webp&quality=lossless&width=246&height=246",
-    date: "Aug 9, 2025, 5:50:29 PM"
-  },
-  {
-    title: "NeoTiers Website V1.5",
-    description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
-    image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
-    author: "Crystzx",
-    authorAvatar: "https://media.discordapp.net/attachments/1398263627219337308/1429528718337900635/image-modified.png?ex=68f677dd&is=68f5265d&hm=1cf37c937b20ad27f13e1f427998e6dda3a952c2f0ca255e9395f37c6dcb17a7&=&format=webp&quality=lossless&width=246&height=246",
-    date: "Aug 9, 2025, 5:50:29 PM"
-  },
   {
     title: "NeoTiers Website V1.5",
     description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
