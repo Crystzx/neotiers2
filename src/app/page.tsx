@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Menu, BookOpen, Users } from "lucide-react";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   const menuItems = [
     { name: "Home", icon: "https://pvptiers.com/icons/navigation/home.svg", href: "#" },
@@ -14,13 +15,23 @@ export default function Home() {
     { name: "Support", icon: "https://pvptiers.com/icons/navigation/support.svg", href: "https://support.neotiers.com" },
   ];
 
+  // Close dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Header */}
       <header className="border-b border-border/30 sticky top-0 bg-background/80 backdrop-blur-sm z-50">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-
-          {/* Logo and Server IP */}
+          {/* Logo + Server IP */}
           <div className="flex items-center gap-4">
             <Image
               src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
@@ -38,33 +49,34 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Menu Dropdown Button */}
-          <div className="relative">
+          {/* Improved Dropdown Menu */}
+          <div className="relative" ref={menuRef}>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="flex items-center gap-2 px-4 py-2 hover:bg-card rounded-lg transition-colors"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded={menuOpen}
+              className="flex items-center gap-2 px-4 py-2 hover:bg-card rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <span className="text-sm font-medium tracking-wider uppercase text-muted-foreground">Menu</span>
               <Menu className="w-5 h-5" />
             </button>
-
             {menuOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg backdrop-blur-xl animate-fadeIn z-50">
-                {menuItems.map((item) => (
+              <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg backdrop-blur-xl z-50 animate-dropdownFadeScale">
+                {menuItems.map(item => (
                   <a
                     key={item.name}
                     href={item.href}
                     target={item.href.startsWith("http") ? "_blank" : "_self"}
                     rel="noopener noreferrer"
                     onClick={() => setMenuOpen(false)}
-                    className="flex items-center gap-3 px-4 py-2 hover:bg-muted/30 transition-colors text-white text-sm"
+                    className="flex items-center gap-3 px-4 py-2 text-white text-sm rounded hover:bg-muted/30 transition-colors"
                   >
                     <Image
                       src={item.icon}
                       alt={`${item.name} Icon`}
                       width={20}
                       height={20}
-                      className="w-5 h-5"
                       unoptimized
                     />
                     <span>{item.name}</span>
@@ -79,9 +91,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-            The Future PvP Experience:
-          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">The Future PvP Experience:</h1>
           <h2 className="text-lg md:text-xl uppercase tracking-widest text-primary mb-8 font-bold">
             Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.
           </h2>
@@ -96,7 +106,6 @@ export default function Home() {
       {/* Main Content Grid */}
       <section className="container mx-auto px-4 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Left Column - Tier Results */}
           <div className="lg:col-span-2 space-y-6">
             {/* High Tier Results */}
             <div className="bg-card border border-border rounded-lg p-6">
@@ -112,30 +121,14 @@ export default function Home() {
                 {highTierResults.map((result, i) => (
                   <div key={i} className="flex items-center justify-between p-3 hover:bg-muted/30 rounded transition-colors">
                     <div className="flex items-center gap-3">
-                      <Image
-                        src={result.avatar}
-                        alt={result.name}
-                        width={40}
-                        height={40}
-                        className="rounded"
-                      />
+                      <Image src={result.avatar} alt={result.name} width={40} height={40} className="rounded" unoptimized />
                       <span className="font-medium text-white">{result.name}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Image
-                        src={result.modeIcon}
-                        alt={result.mode}
-                        width={24}
-                        height={24}
-                        className="w-6 h-6"
-                      />
+                      <Image src={result.modeIcon} alt={result.mode} width={24} height={24} className="w-6 h-6" unoptimized />
                       <span className="text-sm text-muted-foreground uppercase">{result.mode}</span>
-                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>
-                        {result.tier}
-                      </span>
-                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>
-                        {result.region}
-                      </span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>{result.tier}</span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>{result.region}</span>
                     </div>
                   </div>
                 ))}
@@ -156,30 +149,14 @@ export default function Home() {
                 {liveTestResults.map((result, i) => (
                   <div key={i} className="flex items-center justify-between p-3 hover:bg-muted/30 rounded transition-colors">
                     <div className="flex items-center gap-3">
-                      <Image
-                        src={result.avatar}
-                        alt={result.name}
-                        width={40}
-                        height={40}
-                        className="rounded"
-                      />
+                      <Image src={result.avatar} alt={result.name} width={40} height={40} className="rounded" unoptimized />
                       <span className="font-medium text-white">{result.name}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Image
-                        src={result.modeIcon}
-                        alt={result.mode}
-                        width={24}
-                        height={24}
-                        className="w-6 h-6"
-                      />
+                      <Image src={result.modeIcon} alt={result.mode} width={24} height={24} className="w-6 h-6" unoptimized />
                       <span className="text-sm text-muted-foreground uppercase">{result.mode}</span>
-                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>
-                        {result.tier}
-                      </span>
-                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>
-                        {result.region}
-                      </span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>{result.tier}</span>
+                      <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>{result.region}</span>
                     </div>
                   </div>
                 ))}
@@ -187,7 +164,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Column - Community Stats */}
+          {/* Right Column */}
           <div className="space-y-6">
             {/* Discord CTA */}
             <div className="bg-card border border-border rounded-lg p-6 text-center">
@@ -221,7 +198,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Players Online */}
+            {/* Gamemode of the Month */}
             <div className="bg-card border border-border rounded-lg p-6">
               <h4 className="text-lg font-bold mb-4 text-white">Gamemode of the Month</h4>
               <div className="flex -space-x-2 mb-3">
@@ -355,13 +332,6 @@ export default function Home() {
               © 2025 NeoTiers. All rights reserved. NeoTiers is in no way affiliated with Mojang Studios.
               Any contributions or purchases made on this store goes to the construction of a new and improved NeoTiers.
             </p>
-            <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 text-xs">
-              <div className="flex gap-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"></a>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors"></a>
-                <a href="mailto:contact@pvptiers.com" className="text-muted-foreground hover:text-primary transition-colors"></a>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
@@ -369,32 +339,29 @@ export default function Home() {
   );
 }
 
-// Helper functions
+/* == Helpers == */
 function getTierBadgeColor(tier: string) {
-  if (tier.startsWith('HT1') || tier.startsWith('LT1'))
-    return 'bg-[#4B3B00]/50 text-[#FFD700] border border-[#B8860B]';  // goldennn
-
-  if (tier.startsWith('HT2') || tier.startsWith('LT2'))
-    return 'bg-[#adadad]/50 text-[#e6e6e6] border border-[#8a8a8a]';  // silver/iron type shi
-  
-  if (tier.startsWith('HT3') || tier.startsWith('LT3'))
-    return 'bg-[#593e31]/50 text-[#8f6c57] border border-[#423126]';  // brown shiii
-  
-  return 'bg-[#1F2937]/50 text-[#D1D5DB] border border-[#374151]';  // gray ahh
+  if (tier.startsWith("HT1") || tier.startsWith("LT1"))
+    return "bg-[#4B3B00]/50 text-[#FFD700] border border-[#B8860B]";
+  if (tier.startsWith("HT2") || tier.startsWith("LT2"))
+    return "bg-[#adadad]/50 text-[#e6e6e6] border border-[#8a8a8a]";
+  if (tier.startsWith("HT3") || tier.startsWith("LT3"))
+    return "bg-[#593e31]/50 text-[#8f6c57] border border-[#423126]";
+  return "bg-[#1F2937]/50 text-[#D1D5DB] border border-[#374151]";
 }
 
 function getRegionColor(region: string) {
   const colors: Record<string, string> = {
-    EU: 'bg-blue-900/50 text-blue-300 border border-blue-800',
-    NA: 'bg-red-900/50 text-red-300 border border-red-800',
-    AS: 'bg-orange-900/50 text-orange-300 border border-orange-800',
-    AU: 'bg-teal-900/50 text-teal-300 border border-teal-800',
-    SA: 'bg-green-900/50 text-green-300 border border-green-800',
+    EU: "bg-blue-900/50 text-blue-300 border border-blue-800",
+    NA: "bg-red-900/50 text-red-300 border border-red-800",
+    AS: "bg-orange-900/50 text-orange-300 border border-orange-800",
+    AU: "bg-teal-900/50 text-teal-300 border border-teal-800",
+    SA: "bg-green-900/50 text-green-300 border border-green-800",
   };
-  return colors[region] || 'bg-gray-900/50 text-gray-300 border border-gray-800';
+  return colors[region] || "bg-gray-900/50 text-gray-300 border border-gray-800";
 }
 
-// Data
+/* == Data == */
 const highTierResults = [
   { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "HT1", region: "EU" },
   { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Pot", modeIcon: "https://pvptiers.com/icons/modes/pot.webp", tier: "LT1", region: "NA" },
@@ -402,14 +369,12 @@ const highTierResults = [
   { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "HT3", region: "SA" },
   { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Axe", modeIcon: "https://pvptiers.com/icons/modes/axe.webp", tier: "HT3", region: "OC" },
 ];
-
 const liveTestResults = [
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Crystal", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "HT4", region: "EU" },
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Sword", modeIcon: "https://pvptiers.com/icons/modes/sword.webp", tier: "LT4", region: "AS" },
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Axe", modeIcon: "https://pvptiers.com/icons/modes/axe.webp", tier: "HT5", region: "SA" },
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "LT5", region: "OC" },
 ];
-
 const newsItems = [
   {
     title: "NeoTiers Website V1.5",
@@ -420,55 +385,37 @@ const newsItems = [
     date: "Aug 9, 2025, 5:50:29 PM",
   },
 ];
-
 const socialLinks = [
   {
     url: "https://dsc.gg/neotiers",
     icon: (
-      <svg
-        className="w-5 h-5"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"></path>
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
       </svg>
     ),
   },
   {
     url: "https://www.tiktok.com/neotiers",
     icon: (
-      <svg
-        className="w-5 h-5"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path>
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
       </svg>
     ),
   },
   {
     url: "https://www.youtube.com/@neotiers",
     icon: (
-      <svg
-        className="w-5 h-5"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
       </svg>
     ),
   },
   {
     url: "https://x.com/neotiers",
     icon: (
-      <svg
-        className="w-5 h-5"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
   },
 ];
-
