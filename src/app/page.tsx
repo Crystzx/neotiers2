@@ -342,7 +342,7 @@ function getRegionColor(region: string) {
     EU: 'bg-blue-900/50 text-blue-300 border border-blue-800',
     NA: 'bg-red-900/50 text-red-300 border border-red-800',
     AS: 'bg-orange-900/50 text-orange-300 border border-orange-800',
-    OC: 'bg-teal-900/50 text-teal-300 border border-teal-800',
+    AU: 'bg-teal-900/50 text-teal-300 border border-teal-800',
     SA: 'bg-green-900/50 text-green-300 border border-green-800',
   };
   return colors[region] || 'bg-gray-900/50 text-gray-300 border border-gray-800';
