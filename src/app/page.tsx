@@ -350,18 +350,18 @@ function getRegionColor(region: string) {
 
 // Data
 const highTierResults = [
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "UHC", modeIcon: "https://pvptiers.com/icons/badges/uhc.webp", tier: "HT1", region: "EU" },
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Pot", modeIcon: "https://pvptiers.com/icons/badges/pot.webp", tier: "LT1", region: "NA" },
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Neth Pot", modeIcon: "https://pvptiers.com/icons/badges/neth_pot.webp", tier: "HT2", region: "AS" },
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "SMP", modeIcon: "https://pvptiers.com/icons/badges/smp.webp", tier: "HT3", region: "SA" },
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Axe", modeIcon: "https://pvptiers.com/icons/badges/axe.webp", tier: "HT3", region: "OC" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "HT1", region: "EU" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Pot", modeIcon: "https://pvptiers.com/icons/modes/pot.webp", tier: "LT1", region: "NA" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Neth Pot", modeIcon: "https://pvptiers.com/icons/modes/neth_pot.webp", tier: "HT2", region: "AS" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "HT3", region: "SA" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Axe", modeIcon: "https://pvptiers.com/icons/modes/axe.webp", tier: "HT3", region: "OC" },
 ];
 
 const liveTestResults = [
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Crystal", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "HT4", region: "EU" },
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Sword", modeIcon: "https://pvptiers.com/icons/badges/sword.webp", tier: "LT4", region: "AS" },
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Axe", modeIcon: "https://pvptiers.com/icons/badges/axe.webp", tier: "HT5", region: "SA" },
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "SMP", modeIcon: "https://pvptiers.com/icons/badges/smp.webp", tier: "LT5", region: "OC" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Sword", modeIcon: "https://pvptiers.com/icons/modes/sword.webp", tier: "LT4", region: "AS" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Axe", modeIcon: "https://pvptiers.com/icons/modes/axe.webp", tier: "HT5", region: "SA" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "LT5", region: "OC" },
 
 ];
 
