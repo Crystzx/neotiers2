@@ -382,7 +382,7 @@ const newsItems = [
     image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
     author: "Crystzx",
     authorAvatar: "https://media.discordapp.net/attachments/1398263627219337308/1429528718337900635/image-modified.png?ex=68f677dd&is=68f5265d&hm=1cf37c937b20ad27f13e1f427998e6dda3a952c2f0ca255e9395f37c6dcb17a7&=&format=webp&quality=lossless&width=246&height=246",
-    date: "October 22, 2025",
+    date: "Oct 22, 2025",
   },
 ];
 const socialLinks = [
