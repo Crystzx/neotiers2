@@ -67,8 +67,6 @@ export default function Home() {
                   <a
                     key={item.name}
                     href={item.href}
-                    target={item.href.startsWith("http") ? "_blank" : "_self"}
-                    rel="noopener noreferrer"
                     onClick={() => setMenuOpen(false)}
                     className="flex items-center gap-3 px-4 py-2 text-white text-sm rounded hover:bg-muted/30 transition-colors"
                   >
