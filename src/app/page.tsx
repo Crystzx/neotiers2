@@ -26,65 +26,6 @@ export default function Home() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <header className="border-b border-border/30 sticky top-0 bg-background/80 backdrop-blur-sm z-50">
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-          {/* Logo + Server IP */}
-          <div className="flex items-center gap-4">
-            <Image
-              src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
-              alt="NeoTiers Logo"
-              width={50}
-              height={50}
-              className="w-12 h-12"
-            />
-            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-card border border-border rounded-full">
-              <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
-              <div className="flex items-center gap-1.5">
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                <span className="text-sm font-medium">neotiers.mc-mods.xyz</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Improved Dropdown Menu */}
-          <div className="relative" ref={menuRef}>
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              type="button"
-              aria-haspopup="true"
-              aria-expanded={menuOpen}
-              className="flex items-center gap-2 px-4 py-2 hover:bg-card rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
-            >
-              <span className="text-sm font-medium tracking-wider uppercase text-muted-foreground">Menu</span>
-              <Menu className="w-5 h-5" />
-            </button>
-            {menuOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-lg shadow-lg backdrop-blur-xl z-50 animate-dropdownFadeScale">
-                {menuItems.map(item => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setMenuOpen(false)}
-                    className="flex items-center gap-3 px-4 py-2 text-white text-sm rounded hover:bg-muted/30 transition-colors"
-                  >
-                    <Image
-                      src={item.icon}
-                      alt={`${item.name} Icon`}
-                      width={20}
-                      height={20}
-                      unoptimized
-                    />
-                    <span>{item.name}</span>
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
