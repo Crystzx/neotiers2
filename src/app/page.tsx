@@ -45,7 +45,7 @@ export default function Home() {
               <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                <span className="text-sm font-medium">neotiers.mc-mods.xyz</span>
+                <span className="text-sm font-medium">neoduels.mc-mods.xyz</span>
               </div>
             </div>
           </div>
@@ -320,7 +320,7 @@ export default function Home() {
                 <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
                 <div className="flex items-center gap-1.5">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                  <span className="text-sm font-medium">neotiers.mc-mods.xyz</span>
+                  <span className="text-sm font-medium">neoduels.mc-mods.xyz</span>
                 </div>
               </div>
             </div>
