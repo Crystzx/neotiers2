@@ -13,6 +13,7 @@ export default function Home() {
     { name: "Tierlist", icon: "https://pvptiers.com/icons/navigation/tiers-list.svg", href: "https://neotierlist.vercel.app/" },
     { name: "Resources", icon: "https://pvptiers.com/icons/navigation/resources.svg", href: "https://neoresources.vercel.app/" },
     { name: "Support", icon: "https://pvptiers.com/icons/navigation/support.svg", href: "https://neosupport.vercel.app/" },
+    { name: "Report", icon: "https://pvptiers.com/icons/navigation/server.svg", href: "https://neosupport.vercel.app/" },
   ];
 
   // Close dropdown on outside click
