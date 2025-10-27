@@ -366,6 +366,7 @@ const highTierResults = [
   { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "N/A", region: "N/A" },
 ];
 const liveTestResults = [
+  { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT3", region: "EU" },
   { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT3", region: "EU" },
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Iron Speed", modeIcon: "https://i.ibb.co/hJpYtcDD/pixil-frame-0-15-5.png", tier: "LT3", region: "EU" },
 ];
