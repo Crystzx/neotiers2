@@ -124,7 +124,7 @@ export default function Home() {
                       <span className="font-medium text-white">{result.name}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Image src={result.modeIcon} alt={result.mode} width={24} height={24} className="w-6 h-6" unoptimized />
+                      <Image src={result.modeIcon} alt={result.mode} width={40} height={40} className="w-6 h-6" unoptimized />
                       <span className="text-sm text-muted-foreground uppercase">{result.mode}</span>
                       <span className={`px-2 py-0.5 text-xs font-bold rounded ${getTierBadgeColor(result.tier)}`}>{result.tier}</span>
                       <span className={`px-2 py-0.5 text-xs font-bold rounded ${getRegionColor(result.region)}`}>{result.region}</span>
