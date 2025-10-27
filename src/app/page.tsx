@@ -362,6 +362,7 @@ function getRegionColor(region: string) {
 
 /* == Data == */
 const highTierResults = [
+  { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "N/A", region: "N/A" },
 ];
 const liveTestResults = [
   { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT3", region: "EU" },
