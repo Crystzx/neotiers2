@@ -220,7 +220,7 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Last Month's Tests (September)</span>
-                <span className="ml-auto text-white font-bold">1275</span>
+                <span className="ml-auto text-white font-bold">1</span>
               </div>
             </div>
 
