@@ -186,7 +186,8 @@ export default function Home() {
               <h4 className="text-lg font-bold mb-4 text-white">Community Members</h4>
               <div className="flex items-center gap-2 mb-3">
                 <div className="flex -space-x-2">
-                  <Image src="https://i.ibb.co/1tgr8gh0/cropped-circle-image.png" alt="Member" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.ibb.co/1tgr8gh0/cropped-circle-image.png" alt="NeoDuels" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.ibb.co/pr1Rmr00/download-16-modified.png" alt="NeoTiers" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
                 </div>
                 <span className="text-sm text-muted-foreground">and <span className="text-white font-bold">+0</span></span>
               </div>
@@ -201,12 +202,12 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-6">
               <h4 className="text-lg font-bold mb-4 text-white">Gamemode of the Month</h4>
               <div className="flex -space-x-2 mb-3">
-                <Image src="https://pvptiers.com/icons/modes/pot.webp" alt="Pot" width={28} height={28} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
+                <Image src="https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png" alt="Mace SMP" width={36} height={36} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Tests Last Month</span>
-                <span className="ml-auto text-white font-bold">0</span>
+                <span className="ml-auto text-white font-bold">1</span>
               </div>
             </div>
 
