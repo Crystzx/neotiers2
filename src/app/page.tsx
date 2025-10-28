@@ -372,12 +372,12 @@ const liveTestResults = [
 ];
 const newsItems = [
   {
-    title: "NeoTiers Website V1.5",
-    description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
-    image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
+    title: "Neo Tiers Release (Mace SMP, Iron Speed)",
+    description: "Neo Tiers has officially released, the two first gamemodes are: Mace SMP, led by @Crystzx, and Iron Speed, led by @Certier. The discord has it's own fully functional bot and the testing system has released! https://discord.gg/GG9sqeqFkv",
+    image: "https://i.ibb.co/VpPnRx5x/New-Project-30.png",
     author: "Crystzx",
     authorAvatar: "https://i.ibb.co/nN4hdHr8/image-modified.png",
-    date: "Oct 22, 2025",
+    date: "Oct 28, 2025",
   },
   {
     title: "NeoTiers Website V1.5",
