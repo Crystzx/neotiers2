@@ -375,8 +375,8 @@ const newsItems = [
     title: "Neo Tiers Release (Mace SMP, Iron Speed)",
     description: "Neo Tiers has officially released, the two first gamemodes are: Mace SMP, led by @Crystzx, and Iron Speed, led by @Certier. The discord has it's own fully functional bot and the testing system has released! https://discord.gg/GG9sqeqFkv",
     image: "https://i.ibb.co/VpPnRx5x/New-Project-30.png",
-    author: "Crystzx",
-    authorAvatar: "https://i.ibb.co/nN4hdHr8/image-modified.png",
+    author: "Replqing",
+    authorAvatar: "https://i.ibb.co/Mx1ftLBj/help-me-find-instagram-account-of-this-cat-he-she-looks-so-v0-twu4der3mpud1.jpg",
     date: "Oct 28, 2025",
   },
   {
