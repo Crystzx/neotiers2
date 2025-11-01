@@ -402,14 +402,6 @@ const newsItems = [
     authorAvatar: "https://i.ibb.co/Mx1ftLBj/help-me-find-instagram-account-of-this-cat-he-she-looks-so-v0-twu4der3mpud1.jpg",
     date: "Oct 28, 2025",
   },
-  {
-    title: "NeoTiers Website V1.5",
-    description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
-    image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
-    author: "Crystzx",
-    authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
-    date: "Oct 22, 2025",
-  },
 ];
 const socialLinks = [
   {
