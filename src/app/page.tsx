@@ -187,14 +187,16 @@ export default function Home() {
               <div className="flex items-center gap-2 mb-3">
                 <div className="flex -space-x-2">
                   <Image src="https://i.ibb.co/1tgr8gh0/cropped-circle-image.png" alt="NeoDuels" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
-                  <Image src="https://i.ibb.co/pr1Rmr00/download-16-modified.png" alt="NeoTiers" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.ibb.co/xS8mqnmP/New-Project-43-modified.png" alt="Modern UHC" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.ibb.co/Sw84mCXg/New-Project-42-modified.png" alt="Modern Mace" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
+                  <Image src="https://i.ibb.co/m5RtfrFR/81fade77778d2ba94913f4c7c88f8a6a-modified-1.png" alt="Creeper Mace" width={32} height={32} className="rounded-full border-2 border-background w-8 h-8" />
                 </div>
                 <span className="text-sm text-muted-foreground">and <span className="text-white font-bold">+0</span></span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Total Discord Members</span>
-                <span className="ml-auto text-white font-bold">≈100</span>
+                <span className="ml-auto text-white font-bold">Nov. 1: 135</span>
               </div>
             </div>
 
