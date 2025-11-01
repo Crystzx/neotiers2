@@ -366,12 +366,27 @@ const highTierResults = [
   { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "N/A", region: "N/A" },
 ];
 const liveTestResults = [
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT4", region: "EU" },
-  { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "HT4", region: "EU" },
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT3", region: "EU" },
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Iron Speed", modeIcon: "https://i.ibb.co/hJpYtcDD/pixil-frame-0-15-5.png", tier: "LT3", region: "EU" },
+  { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Modern UHC", modeIcon: "https://i.ibb.co/NGRyg8s/pixil-frame-0-15-6.png", tier: "N/A", region: "N/A" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT4", region: "EU" },
+  { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "HT4", region: "EU" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT3", region: "EU" },
 ];
+
+/* https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png - Modern Mace */
+/* https://i.ibb.co/NGRyg8s/pixil-frame-0-15-6.png - Modern UHC */
+
+
+
+
 const newsItems = [
+  {
+    title: "Creeper Mace Addition + Iron Speed replacement",
+    description: "We have officially added Creeper Mace as one of our modes, led by @SpearPvPer/SwetMC, and have also renamed Mace SMP to Modern Mace due to other tierlists already having the name, and lastly we have replaced Iron Speed with Modern UHC, check out the discord for the new link.",
+    image: "https://i.ibb.co/S4JnFPqr/2025-10-28-13-24-39-1.png",
+    author: "Crystzx",
+    authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
+    date: "Oct 28, 2025",
+  },
   {
     title: "Neo Tiers Release (Mace SMP, Iron Speed)",
     description: "Neo Tiers has officially released, the two first gamemodes are: Mace SMP, led by @Crystzx, and Iron Speed, led by @Certier. The discord has it's own fully functional bot and the testing system has released! https://discord.gg/GG9sqeqFkv",
@@ -385,7 +400,7 @@ const newsItems = [
     description: "It’s finally here! The new NeoTiers website, faster, smarter, and ready for the next generation of competition.",
     image: "https://i.ibb.co/HLT6pxvm/New-Project-6.png",
     author: "Crystzx",
-    authorAvatar: "https://i.ibb.co/nN4hdHr8/image-modified.png",
+    authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
     date: "Oct 22, 2025",
   },
 ];
