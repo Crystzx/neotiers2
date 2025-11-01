@@ -196,7 +196,7 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Total Discord Members</span>
-                <span className="ml-auto text-white font-bold">Nov. 1: 135</span>
+                <span className="ml-auto text-white font-bold">≈135</span>
               </div>
             </div>
 
