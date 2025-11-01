@@ -368,6 +368,10 @@ const highTierResults = [
   { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "N/A", region: "N/A" },
 ];
 const liveTestResults = [
+  { name: "ItzT0x1ic", avatar: "https://render.crafty.gg/3d/bust/ItzT0x1ic", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/FbRCKtpK/image-8-1.png", tier: "LT3", region: "EU" },
+  { name: "orangboat", avatar: "https://render.crafty.gg/3d/bust/orangboat", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/FbRCKtpK/image-8-1.png", tier: "HT5", region: "AS" },
+  { name: "NesquickT", avatar: "https://render.crafty.gg/3d/bust/NesquickT", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/FbRCKtpK/image-8-1.png", tier: "HT5", region: "EU" },
+  { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/FbRCKtpK/image-8-1.png", tier: "LT3", region: "EU" },
   { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Modern UHC", modeIcon: "https://i.ibb.co/NGRyg8s/pixil-frame-0-15-6.png", tier: "N/A", region: "N/A" },
   { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT4", region: "EU" },
   { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "HT4", region: "EU" },
@@ -376,6 +380,7 @@ const liveTestResults = [
 
 /* https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png - Modern Mace */
 /* https://i.ibb.co/NGRyg8s/pixil-frame-0-15-6.png - Modern UHC */
+/* https://i.ibb.co/FbRCKtpK/image-8-1.png - Creeper Mace */
 
 
 
