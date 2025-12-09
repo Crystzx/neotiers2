@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NeoTiers",
-  description: "NeoTiers is a competitive Minecraft network built around our unique Tier List System, Minecraft Server, and Training Hub. Created by competitive Minecraft players for competitive players, NeoTiers serves as the central hub for everything related to high-level Minecraft gameplay.",
+  title: "InfinityTiers",
+  description: "Infinity Tiers is a competitive Minecraft network built around our unique Tier List System. Created by competitive Minecraft players for competitive players, Infinity Tiers serves as the central hub for everything related to high-level Minecraft gameplay.",
   icons: {
     icon: "https://i.ibb.co/FLQWNG65/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png",
   },
