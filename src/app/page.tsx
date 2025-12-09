@@ -366,7 +366,7 @@ function getRegionColor(region: string) {
 /* == Data == */
 const highTierResults = [
   { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "HT3", region: "NA" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Netherite OP", modeIcon: "https://pvptiers.com/icons/modes/neth_op.webp", tier: "HT3", region: "NA" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Netherite OP", modeIcon: "https://pvptiers.com/icons/modes/neth_pot.webp", tier: "HT3", region: "NA" },
   { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Pot", modeIcon: "https://pvptiers.com/icons/modes/pot.webp", tier: "HT3", region: "NA" },
   { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Sword", modeIcon: "https://pvptiers.com/icons/modes/sword.webp", tier: "HT3", region: "NA" },
   { name: "Levmaszy", avatar: "https://render.crafty.gg/3d/bust/Levmaszy", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "HT3", region: "NA" },
