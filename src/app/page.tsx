@@ -393,6 +393,12 @@ const liveTestResults = [
 
 const newsItems = [
   {
+    title: "",
+    description: "",
+    image: "https://i.ibb.co/S4JnFPqr/2025-10-28-13-24-39-1.png",
+    author: "Crystzx",
+    authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
+    date: "Oct 28, 2025",
   },
 ];
 const socialLinks = [
