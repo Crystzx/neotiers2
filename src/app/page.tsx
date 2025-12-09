@@ -332,7 +332,7 @@ export default function Home() {
           <div className="mt-8 pt-8 border-t border-border/30 text-center md:text-left">
             <p className="text-xs text-muted-foreground leading-relaxed mb-4">
               © 2025 Infinity Tiers & Crystzx. All rights reserved. Infinity Tiers is in no way affiliated with Mojang Studios.
-              Any contributions or purchases made on this store goes to the construction of a new and improved NeoTiers.
+              Any contributions or purchases made on this store goes to the construction of a new and improved Infinity Tiers.
             </p>
           </div>
         </div>
