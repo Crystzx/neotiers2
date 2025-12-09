@@ -10,10 +10,10 @@ export default function Home() {
 
   const menuItems = [
     { name: "Home", icon: "https://pvptiers.com/icons/navigation/home.svg", href: "#" },
-    { name: "Tierlist", icon: "https://pvptiers.com/icons/navigation/tiers-list.svg", href: "https://neotierlist.vercel.app/" },
-    { name: "Resources", icon: "https://pvptiers.com/icons/navigation/resources.svg", href: "https://neoresources.vercel.app/" },
-    { name: "Support", icon: "https://pvptiers.com/icons/navigation/support.svg", href: "https://neosupport.vercel.app/" },
-    { name: "Report", icon: "https://pvptiers.com/icons/navigation/server.svg", href: "https://neosupport.vercel.app/" },
+    { name: "Tierlist", icon: "https://pvptiers.com/icons/navigation/tiers-list.svg", href: "https://infinitytierlist.vercel.app/" },
+    { name: "Resources", icon: "https://pvptiers.com/icons/navigation/resources.svg", href: "https://infinityresources.vercel.app/" },
+    { name: "Support", icon: "https://pvptiers.com/icons/navigation/support.svg", href: "https://infinitysupport.vercel.app/" },
+    { name: "Report", icon: "https://pvptiers.com/icons/navigation/server.svg", href: "https://infinitysupport.vercel.app/" },
   ];
 
   // Close dropdown on outside click
@@ -36,16 +36,16 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <Image
               src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
-              alt="NeoTiers Logo"
+              alt="Infinity Tiers Logo"
               width={50}
               height={50}
               className="w-12 h-12"
             />
             <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-card border border-border rounded-full">
-              <span className="text-xs text-muted-foreground uppercase tracking-wide">Server IP:</span>
+              <span className="text-xs text-muted-foreground uppercase tracking-wide">Discord Link:</span>
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                <span className="text-sm font-medium">neoduels.mc-mods.xyz</span>
+                <span className="text-sm font-medium">dsc.gg/inftiers</span>
               </div>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function Home() {
             Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            NeoTiers is a competitive Minecraft network built around our unique Tier List System, Minecraft Server, and Training Hub.
-            Created by competitive Minecraft players for competitive players, NeoTiers serves as the central hub for everything related to high-level Minecraft gameplay.
+            Infinity Tiers is a competitive Minecraft network built around our unique Tier List System, Website, and Discord Servers.
+            Created by competitive Minecraft players for competitive players, Infinity Tiers serves as the central hub for everything related to high-level Minecraft gameplay.
             We specialize in promoting and refining 1.9+ combat, offering globally recognized kits designed to help players train, compete, and rise through the ranks.
           </p>
         </div>
@@ -169,7 +169,7 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-4 text-white">Join our official<br />Discord Server!</h3>
               <a
-                href="https://dsc.gg/neotiers"
+                href="https://dsc.gg/inftiers"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 text-white font-bold rounded-lg transition-all"
@@ -300,7 +300,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <Image
                 src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
-                alt="NeoTiers Logo"
+                alt="Infinity Tiers Logo"
                 width={60}
                 height={60}
                 className="w-16 h-16"
@@ -331,7 +331,7 @@ export default function Home() {
 
           <div className="mt-8 pt-8 border-t border-border/30 text-center md:text-left">
             <p className="text-xs text-muted-foreground leading-relaxed mb-4">
-              © 2025 NeoTiers. All rights reserved. NeoTiers is in no way affiliated with Mojang Studios.
+              © 2025 Infinity Tiers & Crystzx. All rights reserved. Infinity Tiers is in no way affiliated with Mojang Studios.
               Any contributions or purchases made on this store goes to the construction of a new and improved NeoTiers.
             </p>
           </div>
@@ -365,47 +365,39 @@ function getRegionColor(region: string) {
 
 /* == Data == */
 const highTierResults = [
-  { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Mace SMP", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "N/A", region: "N/A" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "HT3", region: "NA" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Netherite OP", modeIcon: "https://pvptiers.com/icons/modes/neth_op.webp", tier: "HT3", region: "NA" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Pot", modeIcon: "https://pvptiers.com/icons/modes/pot.webp", tier: "HT3", region: "NA" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Sword", modeIcon: "https://pvptiers.com/icons/modes/sword.webp", tier: "HT3", region: "NA" },
+  { name: "Levmaszy", avatar: "https://render.crafty.gg/3d/bust/Levmaszy", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "HT3", region: "NA" },
 ];
 const liveTestResults = [
-  { name: "ItzT0x1ic", avatar: "https://render.crafty.gg/3d/bust/ItzT0x1ic", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/tw0JC8nC/pixil-frame-0-15-8.png", tier: "LT3", region: "EU" },
-  { name: "orangboat", avatar: "https://render.crafty.gg/3d/bust/orangboat", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/tw0JC8nC/pixil-frame-0-15-8.png", tier: "HT5", region: "AS" },
-  { name: "NesquickT", avatar: "https://render.crafty.gg/3d/bust/NesquickT", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/tw0JC8nC/pixil-frame-0-15-8.png", tier: "HT5", region: "EU" },
-  { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Creeper Mace", modeIcon: "https://i.ibb.co/tw0JC8nC/pixil-frame-0-15-8.png", tier: "LT3", region: "EU" },
-  { name: "N/A", avatar: "https://render.crafty.gg/3d/bust/MHF_Steve", mode: "Modern UHC", modeIcon: "https://i.ibb.co/NGRyg8s/pixil-frame-0-15-6.png", tier: "N/A", region: "N/A" },
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT4", region: "EU" },
-  { name: "SpearPvPer", avatar: "https://render.crafty.gg/3d/bust/SpearPvPer", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "HT4", region: "EU" },
-  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "Modern Mace", modeIcon: "https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png", tier: "LT3", region: "EU" },
+  { name: "trlw", avatar: "https://render.crafty.gg/3d/bust/Trwl", mode: "Vanilla", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "LT3", region: "NA" },
+  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Mace", modeIcon: "https://pvptiers.com/icons/modes/mace.webp", tier: "LT3", region: "EU" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Vanilla", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "LT3", region: "NA" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Mace", modeIcon: "https://pvptiers.com/icons/modes/mace.webp", tier: "LT3", region: "NA" },
+  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "LT3", region: "NA" },
 ];
 
-/* https://i.ibb.co/v4KJB4xm/pixil-frame-0-15-3.png - Modern Mace */
-/* https://i.ibb.co/NGRyg8s/pixil-frame-0-15-6.png - Modern UHC */
-/* https://i.ibb.co/tw0JC8nC/pixil-frame-0-15-8.png - Creeper Mace */
+/* https://pvptiers.com/icons/modes/crystal.webp - Vanilla */
+/* https://pvptiers.com/icons/modes/uhc.webp - UHC */
+/* https://pvptiers.com/icons/modes/mace.webp - Mace */
+/* https://pvptiers.com/icons/modes/sword.webp - Sword */
+/* https://pvptiers.com/icons/modes/smp.webp - SMP */
+/* https://pvptiers.com/icons/modes/pot.webp - Pot */
+/* https://pvptiers.com/icons/modes/neth_pot.webp - Neth OP
+/* https://i.ibb.co/vCPLyQfH/pixil-frame-0-18-1.png - Diamond SMP */
 
 
 
 
 const newsItems = [
   {
-    title: "Creeper Mace Addition + Iron Speed replacement",
-    description: "We have officially added Creeper Mace as one of our modes, led by @SpearPvPer/SwetMC, and have also renamed Mace SMP to Modern Mace due to other tierlists already having the name, and lastly we have replaced Iron Speed with Modern UHC, check out the discord for the new link.",
-    image: "https://i.ibb.co/S4JnFPqr/2025-10-28-13-24-39-1.png",
-    author: "Crystzx",
-    authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
-    date: "Oct 28, 2025",
-  },
-  {
-    title: "Neo Tiers Release (Mace SMP, Iron Speed)",
-    description: "Neo Tiers has officially released, the two first gamemodes are: Mace SMP, led by @Crystzx, and Iron Speed, led by @Certier. The discord has it's own fully functional bot and the testing system has released! https://discord.gg/GG9sqeqFkv",
-    image: "https://i.ibb.co/VpPnRx5x/New-Project-30.png",
-    author: "Replqing",
-    authorAvatar: "https://i.ibb.co/Mx1ftLBj/help-me-find-instagram-account-of-this-cat-he-she-looks-so-v0-twu4der3mpud1.jpg",
-    date: "Oct 28, 2025",
   },
 ];
 const socialLinks = [
   {
-    url: "https://dsc.gg/neotiers",
+    url: "https://dsc.gg/infinitytiers",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" />
@@ -421,7 +413,7 @@ const socialLinks = [
     ),
   },
   {
-    url: "https://www.youtube.com/@neotiers",
+    url: "https://www.youtube.com/@infinitytiers",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
