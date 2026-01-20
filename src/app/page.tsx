@@ -215,7 +215,7 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-6">
               <h4 className="text-lg font-bold mb-4 text-white">Super Testers</h4>
               <div className="flex -space-x-2 mb-3">
-                <Image src="https://render.crafty.gg/3d/bust/Crystzx" alt="Crystzx's avatar" width={28} height={28} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
+                <Image src="https://render.crafty.gg/3d/bust/MHF_Steve" alt="N/A's avatar" width={28} height={28} className="rounded-full border-2 border-background w-8 h-8" unoptimized />
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
@@ -231,10 +231,10 @@ export default function Home() {
                 href="https://discord.com/channels/1401481396907675669/1401484383642189835"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-700 text-white font-bold rounded-lg transition-all"
+                className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-primary to-bg-600 hover:from-primary/90 hover:to-purple-700 text-white font-bold rounded-lg transition-all"
               >
                 <BookOpen className="w-5 h-5" />
-                Read our <span className="text-purple-200">Rules</span>
+                Read our rules
               </a>
             </div>
           </div>
