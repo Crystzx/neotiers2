@@ -33,8 +33,8 @@ export default function Home() {
           {/* Logo + Server IP */}
           <div className="flex items-center gap-4">
             <Image
-              src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
-              alt="Infinity Tiers Logo"
+              src="https://i.ibb.co/624Psch/Spear-Mace-1.png"
+              alt="Spear Tiers Logo"
               width={50}
               height={50}
               className="w-12 h-12"
