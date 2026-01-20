@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   :root {
     --background: 260 20% 8%;            
@@ -20,5 +24,72 @@
     --input: 270 15% 45%;                 
     --ring: 270 80% 70%;                  
     --radius: 0.5rem;
+  }
+}
+
+
+
+
+@font-face {
+  font-family: 'Trap';
+  src: url('https://ext.same-assets.com/3266302440/4286089734.bin') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap';
+  src: url('https://ext.same-assets.com/3266302440/1498645637.bin') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('https://ext.same-assets.com/3266302440/1032612611.bin') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Technor';
+  src: url('https://ext.same-assets.com/3266302440/2967665988.bin') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes dropdownFadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-dropdownFadeScale {
+  animation: dropdownFadeScale 150ms ease-out forwards;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+    background-image: url('https://live.staticflickr.com/65535/54865974118_1e7f006b0d_m.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trap', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
