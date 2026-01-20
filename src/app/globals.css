@@ -4,28 +4,29 @@
 
 @layer base {
   :root {
-    --background: 260 20% 8%;            
-    --foreground: 270 15% 85%;           
-    --card: 260 25% 12%;                 
-    --card-foreground: 270 15% 85%;      
-    --popover: 260 25% 12%;              
-    --popover-foreground: 270 15% 85%;   
-    --primary: 265 80% 70%;              
-    --primary-foreground: 275 10% 15%;   
-    --secondary: 270 60% 60%;            
-    --secondary-foreground: 270 10% 15%; 
-    --muted: 265 30% 30%;                
-    --muted-foreground: 270 10% 60%;    
-    --accent: 265 80% 70%;               
-    --accent-foreground: 275 10% 15%;    
-    --destructive: 0 62.8% 30.6%;        
-    --destructive-foreground: 0 0% 98%;  
-    --border: 270 15% 45%;                
-    --input: 270 15% 45%;                 
-    --ring: 270 80% 70%;                  
+    --background: 210 20% 8%;     /* dark steel blue */
+    --foreground: 210 15% 85%;    /* light blue-gray */
+    --card: 210 25% 12%;          /* matte blue-gray */
+    --card-foreground: 210 15% 85%;
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 15% 85%;
+    --primary: 215 90% 60%;       /* clean blue */
+    --primary-foreground: 210 10% 15%;
+    --secondary: 210 50% 55%;     /* steel blue */
+    --secondary-foreground: 210 10% 15%;
+    --muted: 210 30% 25%;         /* dark blue-gray */
+    --muted-foreground: 210 10% 60%;
+    --accent: 215 90% 60%;
+    --accent-foreground: 210 10% 15%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 15% 35%;        /* blue border */
+    --input: 210 15% 35%;
+    --ring: 215 90% 60%;
     --radius: 0.5rem;
   }
 }
+
 
 
 @font-face {
