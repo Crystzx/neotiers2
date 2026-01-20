@@ -4,28 +4,29 @@
 
 @layer base {
   :root {
-    --background: 260 20% 8%;            /* dark purple background */
-    --foreground: 270 15% 85%;           /* light purple foreground */
-    --card: 260 25% 12%;                 /* card background purple */
-    --card-foreground: 270 15% 85%;      /* card foreground text */
-    --popover: 260 25% 12%;              /* popover background */
-    --popover-foreground: 270 15% 85%;   /* popover text */
-    --primary: 265 80% 70%;              /* primary accent purple */
-    --primary-foreground: 275 10% 15%;   /* primary text */
-    --secondary: 270 60% 60%;            /* secondary purple */
-    --secondary-foreground: 270 10% 15%; /* secondary text */
-    --muted: 265 30% 30%;                /* muted purple background */
-    --muted-foreground: 270 10% 60%;    /* muted purple text */
-    --accent: 265 80% 70%;               /* accent purple */
-    --accent-foreground: 275 10% 15%;    /* accent foreground */
-    --destructive: 0 62.8% 30.6%;        /* keep for destructive */
-    --destructive-foreground: 0 0% 98%;  /* keep for destructive */
-    --border: 270 15% 45%;                /* border purple */
-    --input: 270 15% 45%;                 /* input border purple */
-    --ring: 270 80% 70%;                  /* ring purple */
+    --background: #1a0e2c;      /* hsl(260 20% 8%) */
+    --foreground: #d7cde8;      /* hsl(270 15% 85%) */
+    --card: #1f1431;            /* hsl(260 25% 12%) */
+    --card-foreground: #d7cde8; /* hsl(270 15% 85%) */
+    --popover: #1f1431;
+    --popover-foreground: #d7cde8;
+    --primary: #c18aff;         /* hsl(265 80% 70%) */
+    --primary-foreground: #1e0b2a;
+    --secondary: #a68fcc;       /* hsl(270 60% 60%) */
+    --secondary-foreground: #1e0b2a;
+    --muted: #5c4e7a;           /* hsl(265 30% 30%) */
+    --muted-foreground: #8a7a9c;
+    --accent: #c18aff;
+    --accent-foreground: #1e0b2a;
+    --destructive: #4a0e0e;
+    --destructive-foreground: #f8f8f8;
+    --border: #6b5a8c;          /* hsl(270 15% 45%) */
+    --input: #6b5a8c;
+    --ring: #c18aff;
     --radius: 0.5rem;
   }
 }
+
 
 @font-face {
   font-family: 'Trap';
