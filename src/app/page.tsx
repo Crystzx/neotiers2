@@ -10,10 +10,8 @@ export default function Home() {
 
   const menuItems = [
     { name: "Home", icon: "https://pvptiers.com/icons/navigation/home.svg", href: "#" },
-    { name: "Tierlist", icon: "https://pvptiers.com/icons/navigation/tiers-list.svg", href: "https://infinitytierlist.vercel.app/" },
-    { name: "Resources", icon: "https://pvptiers.com/icons/navigation/resources.svg", href: "https://infinityresources.vercel.app/" },
-    { name: "Support", icon: "https://pvptiers.com/icons/navigation/support.svg", href: "https://infinitysupport.vercel.app/" },
-    { name: "Report", icon: "https://pvptiers.com/icons/navigation/server.svg", href: "https://infinitysupport.vercel.app/" },
+    { name: "Tierlist", icon: "https://pvptiers.com/icons/navigation/tiers-list.svg", href: "https://speartierlist.vercel.app/" },
+    { name: "Resources", icon: "https://pvptiers.com/icons/navigation/resources.svg", href: "https://spearresources.vercel.app/" },
   ];
 
   // Close dropdown on outside click
