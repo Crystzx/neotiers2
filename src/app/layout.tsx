@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Infinity Tiers",
-  description: "Infinity Tiers is a competitive Minecraft network built around our unique Tier List System. Created by competitive Minecraft players for competitive players, Infinity Tiers serves as the central hub for everything related to high-level Minecraft gameplay.",
+  title: "Spear Tiers",
+  description: "Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.",
   icons: {
-    icon: "https://i.ibb.co/FLQWNG65/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png",
+    icon: "https://i.ibb.co/624Psch/Spear-Mace-1.png",
   },
 };
 
