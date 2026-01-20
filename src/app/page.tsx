@@ -363,18 +363,14 @@ function getRegionColor(region: string) {
 
 /* == Data == */
 const highTierResults = [
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "SMP", modeIcon: "https://pvptiers.com/icons/modes/smp.webp", tier: "HT3", region: "NA" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Netherite OP", modeIcon: "https://pvptiers.com/icons/modes/neth_pot.webp", tier: "HT3", region: "NA" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Pot", modeIcon: "https://pvptiers.com/icons/modes/pot.webp", tier: "HT3", region: "NA" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Sword", modeIcon: "https://pvptiers.com/icons/modes/sword.webp", tier: "HT3", region: "NA" },
-  { name: "Levmaszy", avatar: "https://render.crafty.gg/3d/bust/Levmaszy", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "HT3", region: "NA" },
+  { name: "Crystzx", avatar: "https://render.crafty.gg/3d/bust/Crystzx", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "HT3", region: "EU" },
 ];
 const liveTestResults = [
-  { name: "trlw", avatar: "https://render.crafty.gg/3d/bust/Trwl", mode: "Vanilla", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "LT3", region: "NA" },
-  { name: "Certier", avatar: "https://render.crafty.gg/3d/bust/Certier", mode: "Mace", modeIcon: "https://pvptiers.com/icons/modes/mace.webp", tier: "LT3", region: "EU" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Vanilla", modeIcon: "https://pvptiers.com/icons/modes/crystal.webp", tier: "LT3", region: "NA" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "Mace", modeIcon: "https://pvptiers.com/icons/modes/mace.webp", tier: "LT3", region: "NA" },
-  { name: "lebrongaming123", avatar: "https://render.crafty.gg/3d/bust/lebrongaming123", mode: "UHC", modeIcon: "https://pvptiers.com/icons/modes/uhc.webp", tier: "LT3", region: "NA" },
+  { name: "Semin2210", avatar: "https://render.crafty.gg/3d/bust/Semin2210", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT3", region: "EU" },
+  { name: "Fesh4k", avatar: "https://render.crafty.gg/3d/bust/Fesh4k", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT3", region: "EU" },
+  { name: "Tectechtechy", avatar: "https://render.crafty.gg/3d/bust/Tectechtechy", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "HT4", region: "EU" },
+  { name: "Yk_Mega", avatar: "https://render.crafty.gg/3d/bust/Yk_Mega", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT4", region: "EU" },
+  { name: "Fr3ggyDemon", avatar: "https://render.crafty.gg/3d/bust/Fr3ggyDemon", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT4", region: "EU" },
 ];
 
 /* https://pvptiers.com/icons/modes/crystal.webp - Vanilla */
@@ -392,11 +388,11 @@ const liveTestResults = [
 const newsItems = [
   {
     title: "",
-    description: "Infinity Tiers Website V1.0 has been released!",
-    image: "https://i.ibb.co/Dfgvvtqh/New-Project-60-1.png",
+    description: "Spear Tiers Website V1.0 has been released!",
+    image: "",
     author: "Crystzx",
     authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
-    date: "Dec 10, 2025",
+    date: "Jan 20, 2025",
   },
 ];
 const socialLinks = [
