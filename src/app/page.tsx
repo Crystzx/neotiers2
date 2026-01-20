@@ -93,9 +93,9 @@ export default function Home() {
             Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Infinity Tiers is a competitive Minecraft network built around our unique Tier List System, Website, and Discord Servers.
-            Created by competitive Minecraft players for competitive players, Infinity Tiers serves as the central hub for everything related to high-level Minecraft gameplay.
-            We specialize in promoting and refining 1.9+ combat, offering globally recognized kits designed to help players train, compete, and rise through the ranks.
+            Spear Tiers is a competitive Minecraft network created by competitive Minecraft players for other competitive players.
+            Spear Tiers serves as the central hub for new gamemodes such as Spear SMP.
+            We specialize in promoting and refining 1.9+ combat, offering customly made kits designed to help players train, compete, and rise through the ranks.
           </p>
         </div>
       </section>
