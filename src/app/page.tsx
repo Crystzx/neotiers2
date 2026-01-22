@@ -363,7 +363,7 @@ const highTierResults = [
 ];
 const liveTestResults = [
   { name: "Syst3m4k", avatar: "https://render.crafty.gg/3d/bust/Syst3m4k", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "HT5", region: "EU" },
-  { name: "Semin2210", avatar: "https://render.crafty.gg/3d/bust/Semin2210", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT3", region: "EU" },
+  { name: "Semin2210", avatar: "https://render.crafty.gg/3d/bust/Semin2210", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "HT4", region: "EU" },
   { name: "Fesh4k", avatar: "https://render.crafty.gg/3d/bust/Fesh4k", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT3", region: "EU" },
   { name: "Tectechtechy", avatar: "https://render.crafty.gg/3d/bust/Tectechtechy", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "HT4", region: "EU" },
   { name: "Yk_Mega", avatar: "https://render.crafty.gg/3d/bust/Yk_Mega", mode: "SpearSMP", modeIcon: "https://i.ibb.co/PsRW7n1L/e-1.png", tier: "LT4", region: "EU" },
