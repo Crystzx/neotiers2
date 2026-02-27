@@ -204,7 +204,7 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
                 <span>Tests Last Month</span>
-                <span className="ml-auto text-white font-bold">N/A</span>
+                <span className="ml-auto text-white font-bold">2</span>
               </div>
             </div>
 
@@ -216,7 +216,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4" />
-                <span>Last Month's Tests (January)</span>
+                <span>Last Month's Tests (February)</span>
                 <span className="ml-auto text-white font-bold">N/A</span>
               </div>
             </div>
