@@ -318,7 +318,7 @@ export default function Home() {
                 <span className="text-xs text-muted-foreground uppercase tracking-wide">Discord:</span>
                 <div className="flex items-center gap-1.5">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                  <span className="text-sm font-medium">dsc.gg/mcspear</span>
+                  <span className="text-sm font-medium">dsc.gg/rosetiers</span>
                 </div>
               </div>
             </div>
@@ -326,7 +326,7 @@ export default function Home() {
 
           <div className="mt-8 pt-8 border-t border-border/30 text-center md:text-left">
             <p className="text-xs text-muted-foreground leading-relaxed mb-4">
-              © 2025 Spear Tiers & Crystzx. All rights reserved.
+              © 2025 Rose Tiers & Crystzx. All rights reserved.
             </p>
           </div>
         </div>
