@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spear Tiers",
+  title: "Rose Tiers",
   description: "Experience the future of competitive Minecraft PvP, great servers, global rankings, and pure skill-based competitions.",
   icons: {
-    icon: "https://i.ibb.co/624Psch/Spear-Mace-1.png",
+    icon: "https://i.ibb.co/dJM030cX/image-2026-03-01-144254817-removebg-preview.png",
   },
 };
 
