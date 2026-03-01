@@ -294,8 +294,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="flex items-center gap-4">
               <Image
-                src="https://i.ibb.co/RpFMCKmc/Bd-WV0z-AR5-GIg-AAAAAEl-FTk-Su-Qm-CC.png"
-                alt="Infinity Tiers Logo"
+                src="https://i.ibb.co/dJM030cX/image-2026-03-01-144254817-removebg-preview.png"
+                alt="Rose Tiers Logo"
                 width={60}
                 height={60}
                 className="w-16 h-16"
