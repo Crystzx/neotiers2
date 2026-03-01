@@ -32,8 +32,8 @@ export default function Home() {
           {/* Logo + Server IP */}
           <div className="flex items-center gap-4">
             <Image
-              src="https://i.ibb.co/624Psch/Spear-Mace-1.png"
-              alt="Spear Tiers Logo"
+              src="https://i.ibb.co/dJM030cX/image-2026-03-01-144254817-removebg-preview.png"
+              alt="Rose Tiers Logo"
               width={50}
               height={50}
               className="w-12 h-12"
@@ -42,7 +42,7 @@ export default function Home() {
               <span className="text-xs text-muted-foreground uppercase tracking-wide">Discord Link:</span>
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                <span className="text-sm font-medium">dsc.gg/mcspear</span>
+                <span className="text-sm font-medium">dsc.gg/rosetiers</span>
               </div>
             </div>
           </div>
