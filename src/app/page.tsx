@@ -379,7 +379,7 @@ const liveTestResults = [
 const newsItems = [
   {
     title: "",
-    description: "Merged into a tierlist with Modern Cart Community, creating Rose Tiers!",
+    description: "Merged into a tierlist with Modern Cart Community, creating Rose Tiers.",
     image: "",
     author: "Crystzx",
     authorAvatar: "https://i.ibb.co/DPZ8CJyx/output-onlinegiftools.png",
